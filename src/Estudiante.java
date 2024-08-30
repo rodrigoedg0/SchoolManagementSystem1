@@ -1,45 +1,16 @@
 import java.util.Date;
 
-public class Estudiante {
-    private int id;
-    private String nombre;
-    private String apellido;
+public class Estudiante extends Persona {
     private Date fechaDeNacimiento;
     private String estado; // Puede ser "matriculado", "inactivo" o "graduado"
 
     public Estudiante(int id, String nombre, String apellido, Date fechaDeNacimiento, String estado) {
-        this.id = id;
-        this.nombre = nombre;
-        this.apellido = apellido;
+        super(id, nombre, apellido);
         this.fechaDeNacimiento = fechaDeNacimiento;
         this.estado = estado;
     }
 
     // Getters y setters
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public String getApellido() {
-        return apellido;
-    }
-
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
-    }
 
     public Date getFechaDeNacimiento() {
         return fechaDeNacimiento;
